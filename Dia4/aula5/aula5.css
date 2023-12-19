@@ -1,0 +1,81 @@
+body {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #404040;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilizando os radio buttons */
+input[type="radio"] {
+    display: none; /* Esconde o input padrão */
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] + label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 24px; /* Adiciona um espaço à esquerda para a bolinha do checked */
+}
+
+input[type="radio"] + label::before {
+    content: "●"; /* Substitui a bolinha por um caractere mais visível */
+    margin-right: 3px;
+    font-size: 1.5em; /* Tamanho da marcação do checked */
+    color: transparent; /* Define a cor inicial da bolinha como transparente */
+}
+
+input[type="radio"]:checked + label::before {
+    color: #4CAF50; /* Cor verde para indicar que está checked */
+}
+
+input[type="radio"],
+label {
+    margin-bottom: 8px;
+}
+
+input,
+button {
+    padding: 8px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #555555;
+    color: #ffffff;
+    border-radius: 4px;
+}
